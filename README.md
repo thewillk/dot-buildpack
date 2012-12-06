@@ -10,7 +10,10 @@ Installation
   * Supply the `BUILDPACK_URL` env variable 
 
 ```
-heroku config:add BUILDPACK_URL="BUILDPACK_URL: https://github.com/djukami/dot-buildpack.git"
+heroku config:add BUILDPACK_URL="https://github.com/djukami/dot-buildpack.git"
 ```
 
-Place your buildpack scripts in .buildpack in your repo.
+Usage
+-----
+
+Create your own `.buildpack/compile` and `.buildpack/release` files per Heroku's Buildpack API.
