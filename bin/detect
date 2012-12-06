@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ -f $1/.buildpack/compile -a -f $1/.buildpack/release ]; then
+  echo "Custom Buildpack Detected"
+  exit 0
+else
+  exit 1
+fi
